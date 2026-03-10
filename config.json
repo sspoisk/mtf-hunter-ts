@@ -1,0 +1,64 @@
+{
+  "telegram_bot_token": "",
+  "telegram_chat_id": "",
+  "exchange": "okx",
+  "trade_mode": "PAPER",
+  "auto_trade": true,
+  "port": 8100,
+  "debug": false,
+  "version": "ts-1.0",
+  "strategy": {
+    "ema_period": 30,
+    "rsi_period": 14,
+    "rsi_lo": 40,
+    "rsi_hi": 60,
+    "sl_bars": 5,
+    "rr": 2.5,
+    "max_hold_hours": 48,
+    "scan_interval_min": 5
+  },
+  "trading": {
+    "position_size": 100,
+    "leverage": 1,
+    "max_positions": 10
+  },
+  "trailing_stop": {
+    "activation_pct": 0.5,
+    "distance_pct": 0.5
+  },
+  "auto_symbols": {
+    "enabled": true,
+    "top_n": 50,
+    "min_volume_usdt": 5000000,
+    "exclude_bases": [
+      "BTC",
+      "ETH",
+      "USDC",
+      "USDT",
+      "BUSD",
+      "DAI",
+      "TUSD",
+      "FDUSD",
+      "USDE",
+      "PYUSD",
+      "XAUT",
+      "PAXG",
+      "XAU",
+      "XAG",
+      "XPT",
+      "XPD",
+      "LTC",
+      "BNB",
+      "FIL",
+      "SOL",
+      "AR",
+      "COMP",
+      "APT",
+      "TRUMP"
+    ]
+  },
+  "blacklist_symbols": [
+    "DASH",
+    "INJ"
+  ]
+}
